@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Akan name website</title>
+  <link rel="stylesheet" href="css/styles.css" type="text/css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="content">
+    <h1><a href="/" id="logo">Get your AKAN Name now!</a></h1>
+    <div class="about">
+      <h2>About</h2>
+      <p>Akan names are derived from Ghanian culture. Often enough children are given their first names depending on the day they were born.</p>
+      <p>Follow the instructions below to find out what your could-have-been first name if you were born in Ghana!</p>
+    </div>
+    <div class="instructions">
+      <h3><em>Instructions</em></h3>
+      <ol>
+        <li>Enter your birthday.</li>
+        <li>Choose your gender.</li>
+        <li>Click the submit button.</li>
+      </ol>
+    </div>
+    <form id="form" method="POST">
+      <fieldset>
+        <table>
+          <tr>
+            <td></td>Date:<input type="number" id="date"></td>
+          </tr>
+          <tr>
+            <td>Month:<input type="number" id="month"></td>
+          </tr>
+          <tr>
+            <td>Year:<input type="number" id="year"></td>
+          </tr>
+          <tr>
+            <td>
+              <label for="gender">Gender:</label>
+                <select id="gender">
+                  <option value="Female">Female</option>
+                  <option value="Male">Male</option>
+                </select>
+            </td>
+          </tr>
+      </table>
+      </fieldset>
+      <br>
+      <input type="submit" value="Submit" id="submitButton" class="btn btn-primary" onclick="generateName(); return false"/>
+      <h2 class ="text-center" id="result">Results:</h2>
+    </form>
+  </div>
+<script src="js/script.js"></script>
+</body>
+
+</html>
